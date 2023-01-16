@@ -5,13 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="27c09ef9-04f9-4ada-abaa-5430692633a2" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/lesson3" beforeDir="false" afterPath="$PROJECT_DIR$/lesson3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson3/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson3/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson3/.idea/lesson3.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson3/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson3/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson3/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/lesson3/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +41,7 @@
         <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/lesson3" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -90,7 +84,7 @@
       <workItem from="1673354475616" duration="5021000" />
       <workItem from="1673432712314" duration="18067000" />
       <workItem from="1673899656749" duration="2480000" />
-      <workItem from="1673902144665" duration="160000" />
+      <workItem from="1673902144665" duration="491000" />
     </task>
     <servers />
   </component>
