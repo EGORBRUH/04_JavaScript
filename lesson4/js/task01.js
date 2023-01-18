@@ -1,27 +1,13 @@
 'use strict';
 
+const money = + prompt('Где деньги Лебовски?')
 
-  const getTotalRub = (total) => {
 
-    const getUSD = (cash) => {
-      return 73;
-    };
-
-    const usd = getUSD();
-
-    const getEUR = (cash) => {
-      return 1.2;
-    }
-
-    const eur = getEUR;
-
-    return (getEUR() * getUSD());
+const conversion = (eur, usd) => {
+  const con1 = eur * usd;
+  const con2 = money * con1;
+  console.log(con2);
 
 }
 
-const result = getTotalRub();
-console.log('result: ' , result);
-
-
-
-
+conversion(1.2, 73);
