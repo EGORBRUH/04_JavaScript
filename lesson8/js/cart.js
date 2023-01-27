@@ -54,15 +54,15 @@ const cart = {
   totalPrice: 0,
   count: 0,
 
-  getTotalPrice() {         // метод получение всей стоимости товаров
+  getTotalPrice() {
     return this.totalPrice;
   },
 
-  increaseCount (num) {      // метод увеличения товара;
+  increaseCount (num) {
     this.count += num;
   },
 
-  add(title, price, amount ) {  // метод формирование объекта из полученных параметров
+  add(title, price, amount ) {
 
     const item = {
       title,
@@ -75,13 +75,13 @@ const cart = {
     this.calculateItemPrice();
   },
 
-  clear () {                    // метод возращение начальных значений
+  clear () {
     this.items.length = 0;
     this.totalPrice = 0;
     this.count = 0;
   },
 
-  calculateItemPrice () {                 //  метод подсчета всей стоимости товаров в корзине
+  calculateItemPrice () {
     this.totalPrice = this.items.reduce((acc, current) =>
       acc + (current.price * current.amount), 0)
 
