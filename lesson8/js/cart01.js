@@ -1,6 +1,6 @@
 'use strict'
 
-const cart = {
+const cart01 = {
   items: [],
   totalPrice: 0,
   count: 0,
@@ -41,14 +41,14 @@ const cart = {
 
   print() {
     this.items.forEach(item => console.log(`${item.title} : ${JSON.stringify(item)}`));
-    console.log('Всего товаров на сумму:', cart.getTotalPrice(), 'рублей');
+    console.log('Всего товаров на сумму:', cart01.getTotalPrice(), 'рублей');
   },
 
 };
 
 
-cart.add ('console', 50000 , 3);
-cart.add ('coffeeMachine', 12000, 2);
-cart.add ('refrigerator', 40000, 10);
+cart01.add ('console', 50000 , 3);
+cart01.add ('coffeeMachine', 12000, 2);
+cart01.add ('refrigerator', 40000, 10);
 
-cart.print();
+cart01.print();
