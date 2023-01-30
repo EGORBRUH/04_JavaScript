@@ -5,11 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="27c09ef9-04f9-4ada-abaa-5430692633a2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/lessonn3/tasksHard_1.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson8/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/lesson8/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson8/js/cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/lesson8/js/cart01.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson9/js/cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/cart.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +64,7 @@
     "WebServerToolWindowFactoryState": "false",
     "eslint.code.style.apply.dismiss": "true",
     "js.linters.configure.manually.selectedeslint": "true",
-    "last_opened_file_path": "/Users/user/Desktop/METHED/04_JavaScript/lesson9",
+    "last_opened_file_path": "/Users/user/Desktop/METHED/04_JavaScript/lesson9/js",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
     "node.js.detected.package.tslint": "true",
@@ -82,9 +78,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lesson9/js" />
       <recent name="$PROJECT_DIR$/lesson9" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lesson10" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/lesson9/js" />
       <recent name="$PROJECT_DIR$/lesson9" />
@@ -126,7 +124,7 @@
       <workItem from="1675070298074" duration="1906000" />
       <workItem from="1675072208661" duration="2583000" />
       <workItem from="1675077072975" duration="822000" />
-      <workItem from="1675077898300" duration="1828000" />
+      <workItem from="1675077898300" duration="2652000" />
     </task>
     <servers />
   </component>
