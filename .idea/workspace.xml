@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="27c09ef9-04f9-4ada-abaa-5430692633a2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/lesson9/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson9/js/cart.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson9/js/drafts.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson9/.eslintrc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -79,6 +77,10 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/lesson9" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lesson9" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -111,7 +113,9 @@
       <workItem from="1674645642560" duration="10721000" />
       <workItem from="1674759655548" duration="31176000" />
       <workItem from="1674820617365" duration="2801000" />
-      <workItem from="1674840454865" duration="6104000" />
+      <workItem from="1674840454865" duration="6201000" />
+      <workItem from="1675068561222" duration="1642000" />
+      <workItem from="1675070298074" duration="1906000" />
     </task>
     <servers />
   </component>
