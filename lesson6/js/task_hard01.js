@@ -12,7 +12,9 @@ const allCashbox = [
   [1, 370]
 ];
 
-const getAveragePriceGoods = (average) => {
-  const averagePrice = allCashbox.reduce(acc, curr)
-}
-console.log(getAveragePriceGoods(allCashbox));
+
+const average = allCashbox => allCashbox.reduce((acc , curr) => acc + curr, 0) / allCashbox.length;
+
+
+
+console.log(Math.round(average(allCashbox[1])));
