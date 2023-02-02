@@ -3,9 +3,11 @@
 const numOne = +prompt('Ведите первое число');
 const numTwo = +prompt('Введите второе число');
 
-const minNum = (x, y) => {
-  const totalNum = numOne < numTwo ? numOne : numTwo;
+const minNum = () => {
+  const totalNum = numOne  > numTwo;
   return totalNum;
 };
+
+
 
 console.log(minNum());
