@@ -4,7 +4,7 @@ const numOne = +prompt('Ведите первое число');
 const numTwo = +prompt('Введите второе число');
 
 const minNum = () => {
-  const totalNum = numOne  > numTwo;
+  const totalNum = numOne && numTwo === numTwo && numOne;
   return totalNum;
 };
 
