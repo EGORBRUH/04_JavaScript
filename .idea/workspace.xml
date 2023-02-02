@@ -5,14 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="27c09ef9-04f9-4ada-abaa-5430692633a2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/lesson9/js/ipv4.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lessonn3/tasksHard_2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.eslintrc" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson4/js/hard_task02.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lesson4/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/lesson4/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lesson4/js/hard_task01.js" beforeDir="false" afterPath="$PROJECT_DIR$/lesson4/js/hard_task01.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lessonn3/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/lessonn3/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lessonn3/tasksHard_1.js" beforeDir="false" afterPath="$PROJECT_DIR$/lessonn3/tasksHard_1.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,11 +86,11 @@
       <recent name="$PROJECT_DIR$/lesson9" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lessonn3/js" />
       <recent name="$PROJECT_DIR$/lesson9/js" />
       <recent name="$PROJECT_DIR$/lesson10/js" />
       <recent name="$PROJECT_DIR$/lesson10" />
       <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/lesson9" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -135,7 +131,7 @@
       <workItem from="1675077072975" duration="822000" />
       <workItem from="1675077898300" duration="21862000" />
       <workItem from="1675190391170" duration="80000" />
-      <workItem from="1675344109263" duration="3463000" />
+      <workItem from="1675344109263" duration="5128000" />
     </task>
     <servers />
   </component>
