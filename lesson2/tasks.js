@@ -3,18 +3,18 @@
 {
   // Задача 2
 
-  // console.log(Math.random(0));
-  // console.log(Math.round(Math.random(1)));
-  //
-  // const rain = prompt('');
-  //
-  // if (rain == 1) {
-  //   alert('Пошел дождь. Возьмите зонт!');
-  // }  if (rain == 0) {
-  //   alert('Дождя нет!');
-  //
-  // }
-  //
+  console.log(Math.random(0));
+  console.log(Math.round(Math.random(1)));
+
+  const rain = prompt('');
+
+  if (rain == 1) {
+    alert('Пошел дождь. Возьмите зонт!');
+  }  if (rain == 0) {
+    alert('Дождя нет!');
+
+  }
+
 
 }
 

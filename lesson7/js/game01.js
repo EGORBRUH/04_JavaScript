@@ -22,7 +22,7 @@ const game = () => {
     alert(`Вы угадали!`)
     return;
   } else if (userNum < randomNum) {
-    alert(`Меньше!`);
+     alert(`Меньше!`);
     let question = confirm(`Сыграем еще?`)
     if (question === true) {
       return game();
