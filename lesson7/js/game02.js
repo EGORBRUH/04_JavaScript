@@ -1,66 +1,90 @@
 'use strict'
 
-// const randomNum1 = parseInt(Math.round(Math.random() * 10 + 1));
+
 let arrNum = [];
 let attempts = 3;
+
+const resFoo = (one, two) => {
+  let randomResult = one + Math.random() * (one - two);
+  return Math.floor(randomResult);
+}
+function makeRangeIterator (start = 50, end = 100, step = 1) {
+  let iterationCount = 0;
+  for (let i = start; i < end; i += step){
+    iterationCount++;
+
+  }
+  return iterationCount;
+}
 
 const game = () => {
   let numOne = +prompt('Введите первое число!');
   let numTwo = +prompt('Введите второе число!');
-  const randNum = Math.random() === numOne || numTwo && numOne || numTwo * 10 + 1;
   const length = 0;
-
-  const randomArray = arrNum.push(randNum);
+  const result = resFoo(Math.min(numOne), Math.max(numTwo));
+  const randomArray = arrNum.push(result);
+  const range = makeRangeIterator(50, 100);
 
   console.log(arrNum);
-
-  for (let i = 0; i < length; i++) {
-
-  }
 
   if (attempts === 1) {
     alert('Попытки кончились, попробуйте сначала!');
     return;
   }
-    attempts--;
+  attempts--;
 
-    if(isNaN(numOne || numTwo)) {
+  if (isNaN(numOne || numTwo)) {
     alert('Введите число!')
     game();
-    }
-    else if (numOne && numTwo == null) {
+  } if (numOne && numTwo == null) {
     alert('До встречи!');
-    return game();
-  } else if (alert === false) {
+
+  } else if (result === range) {
+    let getAttempts = attempts + 15;
+    alert('Вы получаете 15 попыток' + attempts + 15);
+    return getAttempts;
+
+  } else if (numOne === numTwo) {
+    alert('Это число вы уже вводили попытка не засчитывается!')
+    attempts++;
+    game();
+  } else {
+
+  } if (alert === false) {
     alert('Всего хорошего!');
-    return game();
-  } else if (randomArray === randNum){
+
+  } else if (randomArray === result){
     alert('Вы угадали!');
-    return game();
-  } else if (randomArray > randNum){
+
+  } else if (randomArray > result){
     alert('Меньше! ' + attempts + ' попытки');
     let question = confirm('Продолжаем?');
     if (question === true) {
       game();
     } else if (question === false) {
-      return game();
+        alert('До встречи');
+
     } else if ( attempts === 0) {
       alert('Попытки кончились, попробуйте сначала!');
-      return;
+
     }
-  } else if (randomArray < randNum) {
+  } else if (randomArray < result) {
     alert('Больше! ' + attempts + ' Попытки');
     let question = confirm('Продолжаем?');
     if (question === true) {
     game();
-    } else if ( question === false)
-    return game();
+    } else if ( question === false) {
+
+    }
   } else if ( attempts === 0) {
-      alert('Попытки кончилмсь, попробуйте сначала!');
-      return;
+      alert('Попытки кончились, попробуйте сначала!');
+
     }
 
+    return;
 };
 
+console.log(resFoo(1,100))
 game();
+
 
