@@ -1,90 +1,58 @@
 'use strict'
 
+let numOne = +prompt('Введите первое число!');
+let numTwo = +prompt('Введите второе число!');
+let arrNum = [numOne, numTwo];
+const num = Math.round(Math.abs((numTwo - numOne) * 0.3))
 
-let arrNum = [];
-let attempts = 3;
-
+console.log(arrNum);
 const resFoo = (one, two) => {
   let randomResult = one + Math.random() * (one - two);
   return Math.floor(randomResult);
 }
-function makeRangeIterator (start = 50, end = 100, step = 1) {
-  let iterationCount = 0;
-  for (let i = start; i < end; i += step){
-    iterationCount++;
+const result = resFoo(numOne, numTwo);
 
-  }
-  return iterationCount;
+let countAttempts = '';
+if (result > 0 && result < 50) {
+  countAttempts = num
+}
+if (result > 50 && result < 100) {
+  countAttempts = 15;
+}
+ let reNum;
+
+
+console.log(countAttempts);
+const game = () => {
+
+    if (countAttempts > 0) {
+      const userPlayer = +prompt('Ставки сделаны, начинаем игру!');
+      console.log(userPlayer);
+
+      if (userPlayer === 0) {
+        alert('GameOver!')
+      }
+
+      if (userPlayer === result) {
+        alert('Ты молодец!')
+        return;
+      }
+      if (userPlayer > result) {
+        alert('Меньше! Еще разок!')
+      }
+      if (userPlayer < result) {
+        alert('Больше! Еще разок!')
+      }
+      countAttempts = countAttempts - 1;
+    } else {
+      alert('Ты проиграл!')
+      return;
+    }
+    return game();
+
 }
 
-const game = () => {
-  let numOne = +prompt('Введите первое число!');
-  let numTwo = +prompt('Введите второе число!');
-  const length = 0;
-  const result = resFoo(Math.min(numOne), Math.max(numTwo));
-  const randomArray = arrNum.push(result);
-  const range = makeRangeIterator(50, 100);
 
-  console.log(arrNum);
-
-  if (attempts === 1) {
-    alert('Попытки кончились, попробуйте сначала!');
-    return;
-  }
-  attempts--;
-
-  if (isNaN(numOne || numTwo)) {
-    alert('Введите число!')
-    game();
-  } if (numOne && numTwo == null) {
-    alert('До встречи!');
-
-  } else if (result === range) {
-    let getAttempts = attempts + 15;
-    alert('Вы получаете 15 попыток' + attempts + 15);
-    return getAttempts;
-
-  } else if (numOne === numTwo) {
-    alert('Это число вы уже вводили попытка не засчитывается!')
-    attempts++;
-    game();
-  } else {
-
-  } if (alert === false) {
-    alert('Всего хорошего!');
-
-  } else if (randomArray === result){
-    alert('Вы угадали!');
-
-  } else if (randomArray > result){
-    alert('Меньше! ' + attempts + ' попытки');
-    let question = confirm('Продолжаем?');
-    if (question === true) {
-      game();
-    } else if (question === false) {
-        alert('До встречи');
-
-    } else if ( attempts === 0) {
-      alert('Попытки кончились, попробуйте сначала!');
-
-    }
-  } else if (randomArray < result) {
-    alert('Больше! ' + attempts + ' Попытки');
-    let question = confirm('Продолжаем?');
-    if (question === true) {
-    game();
-    } else if ( question === false) {
-
-    }
-  } else if ( attempts === 0) {
-      alert('Попытки кончились, попробуйте сначала!');
-
-    }
-
-    return;
-};
-
-console.log(resFoo(1,100))
 game();
 
 
