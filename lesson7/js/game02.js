@@ -19,7 +19,6 @@ if (result > 0 && result < 50) {
 if (result > 50 && result < 100) {
   countAttempts = 15;
 }
- let reNum;
 
 
 console.log(countAttempts);
