@@ -1,9 +1,8 @@
 'use strict';
 
 (() => {
-  const figures = ['камень', 'ножницы', 'бумага'];
 
-
+  const FIGURES_RUS = ['камень', 'ножницы', 'бумага'];
   const computerInput = () => {
     let computerResult = null;
 
@@ -35,28 +34,29 @@
     };
 
     return function play() {
-      const playerFigure = prompt('камень, ножницы, бумага');
-      const computerFigure = computerInput();
+      const userPlayer = prompt('камень, ножницы, бумага');
+      const computerPlayer = computerInput();
       const playObject = gameObject;
 
-      if(playerFigure !== figures[0] && playerFigure !== figures[1] && playerFigure !== figures[2]){
+      if(userPlayer !== FIGURES_RUS[0] && userPlayer !== FIGURES_RUS[1] && userPlayer !== FIGURES_RUS[2]){
         alert('Введите корректное значение!');
         return play();
       }
 
-      if(playerFigure === null) {
+      if(userPlayer === null) {
         let question = confirm ('Уже уходите?');
         if(question === true){
-          playObj.finalScore;
+          playObject.finalScore;
           return;
         } else {
           return play();
         }
       };
-      if (playerFigure === figures[0] && computerFigure === figures[1] ||
-        playerFigure === figures[1] && computerFigure === figures[2] ||
-        playerFigure === figures[2] && computerFigure === figures[0]) {
-        alert(`Вы выбрали: ${playerFigure} \n Компьютер выбрал: ${computerFigure} \n Вы выйграли!`);
+
+      if (userPlayer === FIGURES_RUS[0] && computerPlayer === FIGURES_RUS[1] ||
+        userPlayer === FIGURES_RUS[1] && computerPlayer === FIGURES_RUS[2] ||
+        userPlayer === FIGURES_RUS[2] && computerPlayer === FIGURES_RUS[0]) {
+        alert(`Вы выбрали: ${userPlayer} \n Компьютер выбрал: ${computerPlayer} \n Вы выйграли!`);
         results.playerScore++;
         playObject.playerScore = results.playerScore;
         let more = confirm('Сыграем еще?');
@@ -67,8 +67,8 @@
           return;
         };
 
-      } else if (playerFigure === computerFigure) {
-        alert(`Вы выбрали: ${playerFigure} \n Компьютер выбрал: ${computerFigure} \n Ничья!`);
+      } else if (userPlayer === computerPlayer) {
+        alert(`Вы выбрали: ${userPlayer} \n Компьютер выбрал: ${computerPlayer} \n Ничья!`);
         let more = confirm('Сыграем еще?');
         if(more === true) {
           return play();
@@ -78,7 +78,7 @@
         };
 
       } else {
-        alert(`Вы выбрали: ${playerFigure} \n Компьютер выбрал: ${computerFigure} \n Вы проиграли!`);
+        alert(`Вы выбрали: ${userPlayer} \n Компьютер выбрал: ${computerPlayer} \n Вы проиграли!`);
         results.computerScore++;
         playObject.computerScore = results.computerScore;
         let more = confirm('Сыграем еще?');
