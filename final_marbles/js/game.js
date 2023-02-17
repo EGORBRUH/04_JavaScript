@@ -29,9 +29,12 @@
 
     console.log(result);
     return function play() {
-      const userInput = prompt(`Сколько шариков из ${result.ballPlayer} вы хотите разыграть?`);
+      const userInput = +prompt(`Сколько шариков из ${result.ballPlayer} вы хотите разыграть?`);
       const playObject = gameObject;
-      if (userInput === null) {
+      if (Number.isNaN(userInput)) {
+       alert('Введите число!!!');
+       return play();
+      }if (userInput === null) {
         console.log(userInput);
         const question = confirm('Уже уходите?');
         if (question === true) {
@@ -40,7 +43,7 @@
         } else {
           return play();
         }
-      } if (userInput > 5 || userInput < 1) {
+      } if (userInput > 10 || userInput < 1) {
         alert('Введите корректное значение!');
         return play();
       }
@@ -65,59 +68,24 @@
         userInput % 2 === 0 && computerPlayer === 1) {
         alert('Вы не угадали!');
         result.ballPlayer -= +userInput;
-        result.ballBot += +userInput;g
-        return play();
-      } else {
+        result.ballBot += +userInput;
+      }  else {
         alert('Вы угадали!');
         result.ballBot -= +userInput;
         result.ballPlayer += +userInput;
-        return play();
+        if (result.ballPlayer <= 0 === 0 || result.ballPlayer >= 10 === 10 &&
+          result.ballBot <= 0 === 0 || result.ballBot >= 10 === 10) {
+        }
       }
+      if (result.ballPlayer <= 0 || result.ballBot <= 0 ||
+        result.ballPlayer >= 10 || result.ballBot >= 10) {
+        alert('Игра окончена!');
+        result.finalScore;
+        return;
+      }
+      return play();
     };
   };
 
   window.RPS = game;
 })();
-
-
-//
-// if (result.ballPlayer > 0 || result.ballBot > 0) {
-//   play();
-// }
-
-
-// result.player -= +userChoice
-// if (userInput % 2 === 0 && computerPlayer % 2 === 0
-//   || userInput === 3 && computerPlayer % 2 === 0
-//   || userInput === 5 && computerPlayer % 2 === 0
-//   || userInput === 2 && computerPlayer % 2 === 1
-//   || userInput === 4 && computerPlayer % 2 === 1 ) {
-//   alert(`Игрок выбрал: ${userInput} \n
-//   Компьютер выбрал ${computerPlayer} \n Вы выйграли`);
-//   playObject.ballPlayer = result.ballBot -= +computerPlayer;
-//   let more = confirm('Сыграем еще?');
-//   if(more === true) {
-//     return play()
-//   } else {
-//     playObject.finalScore;
-//     return;
-//   };
-//
-//
-// }
-
-
-// else {
-//   alert(`Вы выбрали: ${userInput} \n Компьютер выбрал:
-//   ${computerPlayer} \n Вы проиграли!`);
-//   playObject.ballPlayer = result.ballPlayer -= +userInput;
-//   let more = confirm('Сыграем еще?');
-//   if(more === true) {
-//     return play();
-//   } else {
-//     playObject.finalScore;
-//     return;
-//   };
-// }
-
-
