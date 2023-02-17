@@ -18,8 +18,8 @@
   };
 
   const gameObject = {
-    playerScore:0,
-    computerScore:0,
+    playerScore: 0,
+    computerScore: 0,
 
     get finalScore() {
       alert (`РЕЗУЛЬТАТ ИГРЫ: \n игрок: ${this.playerScore} \n компьютер: ${this.computerScore}`);
