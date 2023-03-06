@@ -6,7 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="27c09ef9-04f9-4ada-abaa-5430692633a2" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/final_marbles/js/game.js" beforeDir="false" afterPath="$PROJECT_DIR$/final_marbles/js/game.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson12/js/game.js" beforeDir="false" afterPath="$PROJECT_DIR$/lesson12/js/game.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson12/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/lesson12/js/script.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +46,19 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="932ed56c-7d71-49d1-a9e8-ef8e3f948b42" />
+        <option name="url" value="https://github.com/EGORBRUH/04_JavaScript.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -92,6 +106,16 @@
       <recent name="$PROJECT_DIR$/lesson10/js" />
       <recent name="$PROJECT_DIR$/lesson10" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="game.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/lesson12/js/game.js" working-dir="$PROJECT_DIR$/lesson12/js">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.game.js" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -145,6 +169,8 @@
       <workItem from="1676626998478" duration="25000000" />
       <workItem from="1676744809449" duration="2177000" />
       <workItem from="1676879637624" duration="6104000" />
+      <workItem from="1678027163096" duration="1264000" />
+      <workItem from="1678100038417" duration="11862000" />
     </task>
     <servers />
   </component>
